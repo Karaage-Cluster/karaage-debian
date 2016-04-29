@@ -19,7 +19,7 @@ Build-Depends: debhelper (>=8.1.0), dh-python, slapd, ldap-utils, po-debconf,
  python3-django-celery, python3-matplotlib, python3-django-environ,
  python3-setuptools-scm,
 Build-Depends-Indep: python3-sphinx (>= 1.0.7+dfsg-1~)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://github.com/Karaage-Cluster/karaage
 Vcs-Git: git://github.com/Karaage-Cluster/karaage
 Vcs-Browser: https://github.com/Karaage-Cluster/karaage
