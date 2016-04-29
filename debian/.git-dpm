@@ -6,3 +6,6 @@
 karaage3_3.1.23.orig.tar.gz
 3041eaccb718c039310b89fbb8c7a501831b2fb9
 669759
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
