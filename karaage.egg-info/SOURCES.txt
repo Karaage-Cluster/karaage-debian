@@ -64,6 +64,7 @@ karaage/.gitignore
 karaage/__init__.py
 karaage/apps.py
 karaage/backends.py
+karaage/logging.py
 karaage/models.py
 karaage/signals.py
 karaage.egg-info/PKG-INFO
@@ -78,7 +79,6 @@ karaage/common/create_update.py
 karaage/common/decorators.py
 karaage/common/emails.py
 karaage/common/forms.py
-karaage/common/logging.py
 karaage/common/models.py
 karaage/common/passwords.py
 karaage/common/saml.py
