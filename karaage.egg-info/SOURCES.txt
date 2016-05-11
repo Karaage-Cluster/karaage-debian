@@ -67,6 +67,7 @@ karaage/backends.py
 karaage/logging.py
 karaage/models.py
 karaage/signals.py
+karaage/version.py
 karaage.egg-info/PKG-INFO
 karaage.egg-info/SOURCES.txt
 karaage.egg-info/dependency_links.txt
