@@ -2,10 +2,10 @@
 aa67f9308e6b5cf8e0b0628f81271a061f7c7bda
 aa67f9308e6b5cf8e0b0628f81271a061f7c7bda
 c66fd6b144937f0200e03040bf0faff2273a61ad
-c66fd6b144937f0200e03040bf0faff2273a61ad
-karaage3_3.1.27.orig.tar.gz
-b33d38f2fb9e6fdc5df7bc1629760157bd68c05a
-657901
+8bf78d2cc4fc5ffc2ec10de494fa8711611bc9e7
+karaage3_3.1.28.orig.tar.gz
+e8731462a4a0b775ade7e671a9daeed1cdf5fb08
+658088
 debianTag="debian/%e%v"
 patchedTag="patched/%e%v"
 upstreamTag="upstream/%e%u"
