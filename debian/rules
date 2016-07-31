@@ -18,13 +18,15 @@ export SETUPTOOLS_SCM_PRETEND_VERSION=$(shell cat PKG-INFO | sed -n 's/^Version:
 %:
 	dh $@ --with python2,python3,sphinxdoc --buildsystem=pybuild
 
-.PHONY: override_dh_auto_build
-override_dh_auto_build:
-	PYTHONPATH=. sphinx-build -b html -d docs/admin/.build/.doctrees -N docs/admin docs/admin/.build/admin
-	PYTHONPATH=. sphinx-build -b man -d docs/admin/.build/.doctrees -N docs/admin docs/admin/.build/man
-	PYTHONPATH=. sphinx-build -b html -d docs/user/.build/.doctrees -N docs/user docs/user/.build/user
-	PYTHONPATH=. sphinx-build -b html -d docs/programmer/.build/.doctrees -N docs/programmer docs/programmer/.build/programmer
-	dh_auto_build
+.PHONY: override_dh_sphinxdoc
+override_dh_sphinxdoc:
+#ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. sphinx-build -b html -d docs/admin/.build/.doctrees -N docs/admin debian/karaage3-doc/usr/share/doc/karaage3-doc/admin
+	PYTHONPATH=. sphinx-build -b man -d docs/admin/.build/.doctrees -N docs/admin debian/karaage3-common/usr/share/man/man8
+	PYTHONPATH=. sphinx-build -b html -d docs/user/.build/.doctrees -N docs/user debian/karaage3-doc/usr/share/doc/karaage3-doc/user
+	PYTHONPATH=. sphinx-build -b html -d docs/programmer/.build/.doctrees -N docs/programmer debian/karaage3-doc/usr/share/doc/karaage3-doc/programmer
+	dh_sphinxdoc
+#endif
 
 .PHONY: override_dh_clean
 override_dh_clean:

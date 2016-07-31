@@ -1,3 +1,10 @@
+karaage3 (3.1.28-2) UNRELEASED; urgency=medium
+
+  * Override override_dh_sphinxdoc instead of -override_dh_auto_build in
+    debian/rules.
+
+ -- Brian May <bam@debian.org>  Sun, 31 Jul 2016 16:48:38 +1000
+
 karaage3 (3.1.28-1) unstable; urgency=medium
 
   * New upstream version.
